@@ -1,0 +1,45 @@
+/* jury-review.component.css */
+
+/* Jury Review Styles */
+.jury-review {
+    background: url('wp4156465-robert-duvall-wallpapers.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 50px;
+    min-height: 100vh;
+    color: #fff;
+  }
+  
+  .heading {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .jury-reviews {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .jury-review-item {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: calc(33.33% - 40px); /* To fit three reviews per row */
+    text-align: center;
+  }
+  
+  .review-title {
+    font-size: 1.5em;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .review-content {
+    color: #fff;
+  }
+  
+  /* Add more styles as needed */
+  

@@ -1,0 +1,28 @@
+{{loginForm.value | json}} 
+{{loginModel | json}} 
+<section>
+    <div class="form-box" id="para21">
+        <div class="form-value">
+            <form #loginForm="ngForm" (ngSubmit)="onLogin()">
+                <h2>Login</h2>
+                <div class="inputbox">
+                    <input type="email" [(ngModel)]='loginModel.email' name='email' required>
+                    <label for="">Email</label>
+                </div>
+                <div class="inputbox">
+                    <input type="password" [(ngModel)]='loginModel.password' name='password' required>
+                    <label for="">Password</label>
+                </div>
+                <div class="forget">
+                    <label for=""><input type="checkbox">Remember Me </label>
+                    <label><a href="#">Forget Password</a></label>
+                </div>
+                <button type="Login" routerLink="/popwind">Login</button>
+                <div class="register">
+                    <p>Don't have a account
+                    <label><a routerLink="/register_mentor">Register</a></label></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

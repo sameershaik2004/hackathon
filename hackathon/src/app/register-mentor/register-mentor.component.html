@@ -1,0 +1,35 @@
+{{registerForm.value | json}} 
+{{registerModel | json}} 
+<section>
+    <div class="form-box" id="#para12">
+        <div class="form-value">
+            <form #registerForm="ngForm" (ngSubmit)="onRegister()">
+                <h2>Register</h2>
+                <div class="inputbox">
+                    <input type="text" required [(ngModel)]="registerModel.username" name="username">
+                    <label for="">User Name</label>
+                </div>
+                <div class="inputbox">
+                    <input type="email" required [(ngModel)]="registerModel.email" name="email">
+                    <label for="">Email</label>
+                </div>
+                <div class="inputbox">
+                    <input type="password" required [(ngModel)]="registerModel.password" name="password">
+                    <label for="">Password</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" required [(ngModel)]="registerModel.name" name="name">
+                    <label for="">Name</label>
+                </div>
+                <div class="forget">
+                    <label for=""><input type="checkbox">Remember Me </label>
+                    <label><a href="#">Forget Password</a></label>
+                </div>
+                <button type="submit" routerLink="/popwind">Register</button>
+                <div class="register">
+                    <p>All ready have a account <a routerLink="/login_mentor">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

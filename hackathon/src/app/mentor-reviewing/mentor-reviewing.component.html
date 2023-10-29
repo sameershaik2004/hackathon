@@ -1,0 +1,11 @@
+<!-- jury-review.component.html -->
+<section class="jury-review">
+    <h2 class="heading">Jury Reviews</h2>
+    <div class="jury-reviews">
+      <div class="jury-review-item" *ngFor="let review of juryReviews">
+        <h3 class="review-title">{{ review.title }}</h3>
+        <p class="review-content">{{ review.content }}</p>
+      </div>
+    </div>
+  </section>
+  

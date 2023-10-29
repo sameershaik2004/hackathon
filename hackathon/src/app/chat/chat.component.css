@@ -1,0 +1,89 @@
+/* Set the background image */
+.chat-application {
+  background-image: url('9254983.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style the chat container */
+.chat-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 16px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the chat messages */
+.chat-messages {
+  flex: 1;
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+.message {
+  max-width: 70%;
+  border-radius: 10px;
+  margin: 8px;
+  padding: 10px;
+}
+
+.outgoing {
+  background-color: #DCF8C6;
+  align-self: flex-end;
+}
+
+.incoming {
+  background-color: #fff;
+  align-self: flex-start;
+}
+
+.message-content {
+  margin: 0;
+}
+
+/* Style the chat input form */
+.chat-input-form {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.chat-input {
+  flex: 1;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.send-button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #0056b3;
+}
+
+/* Style the navigation bar */
+.navbar {
+  background-color: #25D366;
+  color: #fff;
+}
+
+.navbar-brand {
+  font-size: 24px;
+}
